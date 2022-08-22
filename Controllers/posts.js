@@ -13,22 +13,6 @@ export const getPosts =  async (req , res) => {
   }
 }
 
-// export const createPosts = async (req , res) => {
-//   const post = req.body;
-//   console.log(post);
-
-//   const newPostMessage = new PostMessage({ ...post , creator: req.userId , createdAt: new Date().toISOString});
-
-//   try {
-//     // console.log("trying to save" , newPostMessage);
-//     await newPostMessage.save();
-//     // console.log("saved to db");
-//     res.status(201).json(newPostMessage);
-//   } catch (error) {
-//     res.status(409).json({message: error});
-//   }
-// }
-
 export const createPosts = async (req, res) => {
   const post = req.body;
 
