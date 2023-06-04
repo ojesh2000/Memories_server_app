@@ -19,7 +19,8 @@ app.get("/" , (req , res) => {
   res.send("Hello!! from backend");
 });
 
-const CONNECTION_URL = "mongodb+srv://Ojesh:sharma2000@posts.7rmrvae.mongodb.net/?retryWrites=true&w=majority";
+// const CONNECTION_URL = "mongodb+srv://Ojesh:sharma2000@posts.7rmrvae.mongodb.net/?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb+srv://Ojesh:sharma2000@cluster0.mh1vwdr.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 1001;
 
 mongoose.connect(CONNECTION_URL , { useNewUrlParser: true , useUnifiedTopology: true  })
